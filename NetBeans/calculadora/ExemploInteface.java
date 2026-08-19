@@ -342,94 +342,136 @@ public class ExemploInteface extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnDivActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDivActionPerformed
-        lblValor.setText(txtResultado.getText()+"/");
-        n1 = Double.parseDouble(txtResultado.getText());
-        operacao = "div";
-        txtResultado.setText("");
-    }//GEN-LAST:event_btnDivActionPerformed
+    lblValor.setText(txtResultado.getText()+"/");
+    n1 = Double.parseDouble(txtResultado.getText());
+    operacao = "div";
+    txtResultado.setText("");
+}//GEN-LAST:event_btnDivActionPerformed
 
-    private void btnCEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCEActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnCEActionPerformed
+private void btnCEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCEActionPerformed
+    // Limpa apenas o valor digitado atualmente
+    txtResultado.setText("");
+}//GEN-LAST:event_btnCEActionPerformed
 
-    private void btnCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnCActionPerformed
+private void btnCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCActionPerformed
+    // Limpa tudo: valor atual, label e reseta operação
+    txtResultado.setText("");
+    lblValor.setText("");
+    n1 = 0;
+    n2 = 0;
+    operacao = "";
+}//GEN-LAST:event_btnCActionPerformed
 
-    private void btnBSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBSActionPerformed
-       
-    }//GEN-LAST:event_btnBSActionPerformed
+private void btnBSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBSActionPerformed
+    // Apaga o último caractere digitado (backspace)
+    String texto = txtResultado.getText();
+    if (texto.length() > 0) {
+        txtResultado.setText(texto.substring(0, texto.length() - 1));
+    }
+}//GEN-LAST:event_btnBSActionPerformed
 
-    private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn7ActionPerformed
-        txtResultado.setText(txtResultado.getText()+"7");
-    }//GEN-LAST:event_btn7ActionPerformed
+private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn7ActionPerformed
+    txtResultado.setText(txtResultado.getText()+"7");
+}//GEN-LAST:event_btn7ActionPerformed
 
-    private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed
-        txtResultado.setText(txtResultado.getText()+"9");
-    }//GEN-LAST:event_btn9ActionPerformed
+private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed
+    txtResultado.setText(txtResultado.getText()+"9");
+}//GEN-LAST:event_btn9ActionPerformed
 
-    private void btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn8ActionPerformed
-        txtResultado.setText(txtResultado.getText()+"8");
-    }//GEN-LAST:event_btn8ActionPerformed
+private void btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn8ActionPerformed
+    txtResultado.setText(txtResultado.getText()+"8");
+}//GEN-LAST:event_btn8ActionPerformed
 
-    private void btnMultActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMultActionPerformed
-        lblValor.setText(txtResultado.getText()+"*");
-        n1 = Double.parseDouble(txtResultado.getText());
-        operacao = "mult";
-        txtResultado.setText("");
-    }//GEN-LAST:event_btnMultActionPerformed
+private void btnMultActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMultActionPerformed
+    lblValor.setText(txtResultado.getText()+"*");
+    n1 = Double.parseDouble(txtResultado.getText());
+    operacao = "mult";
+    txtResultado.setText("");
+}//GEN-LAST:event_btnMultActionPerformed
 
-    private void btnSubActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubActionPerformed
-        lblValor.setText(txtResultado.getText()+"-");
-        n1 = Double.parseDouble(txtResultado.getText());
-        operacao = "sub";
-        txtResultado.setText("");
-    }//GEN-LAST:event_btnSubActionPerformed
+private void btnSubActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubActionPerformed
+    lblValor.setText(txtResultado.getText()+"-");
+    n1 = Double.parseDouble(txtResultado.getText());
+    operacao = "sub";
+    txtResultado.setText("");
+}//GEN-LAST:event_btnSubActionPerformed
 
-    private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
-        txtResultado.setText(txtResultado.getText()+"5");
-    }//GEN-LAST:event_btn5ActionPerformed
+private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
+    txtResultado.setText(txtResultado.getText()+"5");
+}//GEN-LAST:event_btn5ActionPerformed
 
-    private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
-        txtResultado.setText(txtResultado.getText()+"4");
-    }//GEN-LAST:event_btn4ActionPerformed
+private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
+    txtResultado.setText(txtResultado.getText()+"4");
+}//GEN-LAST:event_btn4ActionPerformed
 
-    private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
-        txtResultado.setText(txtResultado.getText()+"6");
-    }//GEN-LAST:event_btn6ActionPerformed
+private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
+    txtResultado.setText(txtResultado.getText()+"6");
+}//GEN-LAST:event_btn6ActionPerformed
 
-    private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
-        txtResultado.setText(txtResultado.getText()+"1");
-    }//GEN-LAST:event_btn1ActionPerformed
+private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
+    txtResultado.setText(txtResultado.getText()+"1");
+}//GEN-LAST:event_btn1ActionPerformed
 
-    private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
-        txtResultado.setText(txtResultado.getText()+"2");
-    }//GEN-LAST:event_btn2ActionPerformed
+private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
+    txtResultado.setText(txtResultado.getText()+"2");
+}//GEN-LAST:event_btn2ActionPerformed
 
-    private void btnSomaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSomaActionPerformed
-        lblValor.setText(txtResultado.getText()+"+");
-        n1 = Double.parseDouble(txtResultado.getText());
-        operacao = "soma";
-        txtResultado.setText("");
-    }//GEN-LAST:event_btnSomaActionPerformed
+private void btnSomaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSomaActionPerformed
+    lblValor.setText(txtResultado.getText()+"+");
+    n1 = Double.parseDouble(txtResultado.getText());
+    operacao = "soma";
+    txtResultado.setText("");
+}//GEN-LAST:event_btnSomaActionPerformed
 
-    private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
-        txtResultado.setText(txtResultado.getText()+"3");
-    }//GEN-LAST:event_btn3ActionPerformed
+private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
+    txtResultado.setText(txtResultado.getText()+"3");
+}//GEN-LAST:event_btn3ActionPerformed
 
-    private void btn0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn0ActionPerformed
-        txtResultado.setText(txtResultado.getText()+"0");
-    }//GEN-LAST:event_btn0ActionPerformed
+private void btn0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn0ActionPerformed
+    txtResultado.setText(txtResultado.getText()+"0");
+}//GEN-LAST:event_btn0ActionPerformed
 
-    private void btnIgualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIgualActionPerformed
-        double resultado;
-        n2 = Double.parseDouble(txtResultado.getText());
-        if(operacao == "soma"){
+private void btnIgualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIgualActionPerformed
+    double resultado;
+
+    // Evita erro se o usuário clicar em "=" sem ter digitado um segundo número
+    if (txtResultado.getText().isEmpty()) {
+        return;
+    }
+
+    n2 = Double.parseDouble(txtResultado.getText());
+
+    switch (operacao) {
+        case "soma":
             resultado = n1 + n2;
-            lblValor.setText(n1 +"+"+ n2+ "=");
+            lblValor.setText(n1 + "+" + n2 + "=");
             txtResultado.setText(String.valueOf(resultado));
-        }
-    }//GEN-LAST:event_btnIgualActionPerformed
+            break;
+        case "sub":
+            resultado = n1 - n2;
+            lblValor.setText(n1 + "-" + n2 + "=");
+            txtResultado.setText(String.valueOf(resultado));
+            break;
+        case "mult":
+            resultado = n1 * n2;
+            lblValor.setText(n1 + "*" + n2 + "=");
+            txtResultado.setText(String.valueOf(resultado));
+            break;
+        case "div":
+            if (n2 == 0) {
+                lblValor.setText("Erro: divisão por zero");
+                txtResultado.setText("");
+            } else {
+                resultado = n1 / n2;
+                lblValor.setText(n1 + "/" + n2 + "=");
+                txtResultado.setText(String.valueOf(resultado));
+            }
+            break;
+        default:
+            // Nenhuma operação selecionada; não faz nada
+            break;
+    }
+}//GEN-LAST:event_btnIgualActionPerformed
 
     private void btnPontoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPontoActionPerformed
         // TODO add your handling code here:
